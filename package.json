@@ -1,0 +1,40 @@
+{
+  "name": "ssb-gathering-schema",
+  "version": "0.0.1",
+  "description": "JSON schemas and validation for secure scuttlebutt message types for gatherings",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "npm run test:js && npm run test:lint",
+    "test:js": "tape test/**/*.test.js | tap-diff",
+    "test:lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssbc/ssb-gathering-schema.git"
+  },
+  "keywords": [
+    "scuttlebutt",
+    "schema",
+    "validation",
+    "gathering"
+  ],
+  "author": "mixmix",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ssbc/ssb-gathering-schema/issues"
+  },
+  "homepage": "https://github.com/ssbc/ssb-gathering-schema#readme",
+  "dependencies": {
+    "is-my-json-valid": "^2.17.2",
+    "ssb-msg-content": "^1.0.1",
+    "ssb-ref": "^2.11.1",
+    "ssb-schema-definitions": "^1.0.6"
+  },
+  "devDependencies": {
+    "scuttle-testbot": "^1.1.6",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.9.1",
+    "tape-plus": "^1.0.0"
+  }
+}
