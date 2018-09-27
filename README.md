@@ -18,9 +18,14 @@ schemas describe the `content` section of messages
 
 ```js
 {
-  type: gathering
+  type: gathering,
+  mentions: Array,  // (optional) people to notify
+  recps: Array      // (optional) private recipients
 }
 ```
+
+`mentions` / `recps` entries each a `FeedId`, or a 'link' object: `{ link: FeedId, name: String}`
+
 
 ### gathering-update (type: `about`)
 
@@ -45,9 +50,12 @@ Updates to the details of a gathering are about messages with some / all of the 
     name: String,
     size: Integer,
     type: MimeType
-  }
+  },
+  recps: Array          // (optional)
 }
 ```
+
+`recps` entries each a `FeedId`, or a 'link' object: `{ link: FeedId, name: String}`
 
 ### attendee (type: `about`)
 
@@ -58,5 +66,9 @@ Updates to the details of a gathering are about messages with some / all of the 
   attendee: {
     link: FeedId    // can be about another person!
     remove: true    // (optional)
-  }
+  },
+  recps: Array      // (optional)
 }
+```
+
+`recps` entries each a `FeedId`, or a 'link' object: `{ link: FeedId, name: String}`

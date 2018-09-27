@@ -1,3 +1,5 @@
+const definitions = require('ssb-schema-definitions')
+
 module.exports = {
   $schema: 'http://json-schema.org/schema#',
   type: 'object',
@@ -6,6 +8,9 @@ module.exports = {
     type: {
       type: 'string',
       pattern: '^gathering$'
-    }
-  }
+    },
+    mentions: { $ref: '#/definitions/mentions/any' },
+    recps: { $ref: '#/definitions/recps' }
+  },
+  definitions
 }

@@ -19,7 +19,11 @@ const GatheringUpdate = () => {
       name: 'simone.jpg',
       size: 47904,
       type: 'image/jpeg'
-    }
+    },
+    recps: [
+      '@ye+QM09iPcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519',
+      { link: '@SomeOne+PcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519', name: 'chip' }
+    ]
   }
 }
 

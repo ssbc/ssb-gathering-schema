@@ -35,5 +35,6 @@ module.exports = {
       }
     }
   },
-  definitions: definitions
+  recps: { $ref: '#/definitions/recps' },
+  definitions
 }

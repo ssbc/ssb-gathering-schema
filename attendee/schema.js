@@ -17,7 +17,8 @@ module.exports = {
         link: { $ref: '#/definitions/feedId' },
         remove: { type: 'boolean' }
       }
-    }
+    },
+    recps: { $ref: '#/definitions/recps' }
   },
-  definitions: definitions
+  definitions
 }
