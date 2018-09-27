@@ -19,8 +19,9 @@ schemas describe the `content` section of messages
 ```js
 {
   type: gathering,
-  mentions: Array,  // (optional) people to notify
-  recps: Array      // (optional) private recipients
+  progenitor: MessageId  // (optional) the thing that spawned this gathering
+  mentions: Array,       // (optional) people to notify
+  recps: Array           // (optional) private recipients
 }
 ```
 

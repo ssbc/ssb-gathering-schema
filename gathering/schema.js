@@ -9,6 +9,7 @@ module.exports = {
       type: 'string',
       pattern: '^gathering$'
     },
+    progenitor: { $ref: '#/definitions/messageId' },
     mentions: { $ref: '#/definitions/mentions/any' },
     recps: { $ref: '#/definitions/recps' }
   },
