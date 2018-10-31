@@ -28,7 +28,7 @@
   "dependencies": {
     "is-my-json-valid": "^2.17.2",
     "ssb-msg-content": "^1.0.1",
-    "ssb-ref": "^2.11.1",
+    "ssb-ref": "~2.12.2",
     "ssb-schema-definitions": "^1.1.0"
   },
   "devDependencies": {
