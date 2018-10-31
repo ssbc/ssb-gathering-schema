@@ -22,7 +22,7 @@ const GatheringUpdate = () => {
     },
     recps: [
       '@ye+QM09iPcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519',
-      { link: '@SomeOne+PcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519', name: 'chip' }
+      '@SomeOne+PcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519'
     ]
   }
 }
@@ -65,6 +65,11 @@ test('is-gathering-update', t => {
   const brokenImage = GatheringUpdate()
   delete brokenImage.image.link
   t.false(valid(brokenImage), 'broken image')
+
+  // recps
+  const brokenRecps = GatheringUpdate()
+  brokenRecps.recps = { link: '@SomeOne+PcDJD6YvQYjoQc7sLF/IFhmNbEqgdzQo3lQ=.ed25519', name: 'chip' }
+  t.false(valid(brokenRecps), 'broken recps')
 
   t.end()
 })

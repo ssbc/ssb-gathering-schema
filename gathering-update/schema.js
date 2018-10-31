@@ -33,8 +33,8 @@ module.exports = {
           pattern: '^image/\\w+$'
         }
       }
-    }
+    },
+    recps: { $ref: '#/definitions/recps' }
   },
-  recps: { $ref: '#/definitions/recps' },
   definitions
 }
