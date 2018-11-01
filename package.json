@@ -28,8 +28,7 @@
   "dependencies": {
     "is-my-json-valid": "^2.17.2",
     "ssb-msg-content": "^1.0.1",
-    "ssb-ref": "2.12.0",
-    "ssb-schema-definitions": "^1.1.2"
+    "ssb-schema-definitions": "^1.1.3"
   },
   "devDependencies": {
     "scuttle-testbot": "^1.1.6",
