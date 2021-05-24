@@ -4,7 +4,7 @@
 
 
 ```js
-var { isGathering, isGatheringUpdate, isAttendee } = require('ssb-gathering-schema')
+var { isGathering, isUpdate, isAttendee } = require('ssb-gathering-schema')
 
 isGathering(msg)
 // => true
